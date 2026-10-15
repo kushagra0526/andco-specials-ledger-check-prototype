@@ -1,0 +1,84 @@
+{
+ "summary": {
+  "ledger": {
+   "exact_cases": 395,
+   "overstated_total": 797.0,
+   "understated_total": 0,
+   "median_abs_error": 0.0,
+   "cases_over_1000": 0
+  },
+  "sum_all": {
+   "exact_cases": 1,
+   "overstated_total": 2616793.0,
+   "understated_total": 0,
+   "median_abs_error": 6028.0,
+   "cases_over_1000": 386
+  },
+  "drop_resent": {
+   "exact_cases": 7,
+   "overstated_total": 1666260.0,
+   "understated_total": 0,
+   "median_abs_error": 4096.0,
+   "cases_over_1000": 372
+  },
+  "line_dedupe": {
+   "exact_cases": 198,
+   "overstated_total": 51975.0,
+   "understated_total": 729.0,
+   "median_abs_error": 31.0,
+   "cases_over_1000": 0
+  },
+  "truth_total_billed": 3307509.0,
+  "requests": {
+   "true": 835,
+   "found": 814,
+   "listed": 816,
+   "wrong": 2
+  },
+  "exclusions": {
+   "pre_accident_lines_true": 255,
+   "pre_accident_excluded": 255,
+   "unrelated_lines_true": 87,
+   "unrelated_flagged": 82
+  },
+  "paid": {
+   "cases_with_full_payment_data": 34,
+   "paid_basis_exact": 33,
+   "liens_exact": 30
+  },
+  "cases": 400,
+  "unresolved_provider_docs": 0
+ },
+ "ledger_misses": [
+  {
+   "seed": 55,
+   "truth": 11257.0,
+   "ledger": 11428.0,
+   "diff": 171.0
+  },
+  {
+   "seed": 279,
+   "truth": 10195.0,
+   "ledger": 10316.0,
+   "diff": 121.0
+  },
+  {
+   "seed": 291,
+   "truth": 5729.0,
+   "ledger": 5908.0,
+   "diff": 179.0
+  },
+  {
+   "seed": 350,
+   "truth": 8783.0,
+   "ledger": 8943.0,
+   "diff": 160.0
+  },
+  {
+   "seed": 371,
+   "truth": 3683.0,
+   "ledger": 3849.0,
+   "diff": 166.0
+  }
+ ]
+}

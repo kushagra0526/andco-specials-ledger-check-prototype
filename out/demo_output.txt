@@ -1,0 +1,70 @@
+Case 90011: Robert Clark, accident 2026-06-21, 30 documents {'RECORD': 20, 'ITEMIZED': 4, 'STATEMENT': 2, 'EOB': 2, 'UB04': 2}
+
+SPECIALS LEDGER (unique charges)
+  Mount Hope Pain Management
+    2026-08-08 77003       259.00  INCLUDED               src D02,D04      paid   214.54 adj    44.46
+    2026-08-08 99204       319.00  INCLUDED               src D02,D04      paid   205.08 adj    91.13
+  Peak Performance Physical Therapy
+    2026-02-10 97110       182.00  EXCLUDED_PRE_ACCIDENT  src D17,D19      paid   103.94 adj    52.08
+        - date of service 2026-02-10 is before the accident 2026-06-21
+    2026-07-05 G0283        35.00  INCLUDED               src D17,D19      paid    12.73 adj    20.85
+    2026-07-05 97112       165.00  INCLUDED               src D17,D19      paid   136.38 adj    28.62
+    2026-07-05 97530       121.00  INCLUDED               src D17,D19      paid    98.87 adj    22.13
+    2026-07-08 G0283        47.00  INCLUDED               src D17,D19      paid    23.87 adj    17.16
+    2026-07-08 97110       121.00  INCLUDED               src D17,D19      paid    74.86 adj    27.43
+    2026-07-11 97530       111.00  INCLUDED               src D17,D19      paid    73.30 adj    29.55
+    2026-07-11 97112       118.00  INCLUDED               src D17,D19      paid    69.82 adj    48.18
+    2026-07-11 97110       136.00  INCLUDED               src D17,D19      paid    53.29 adj    82.71
+    2026-07-13 97112       142.00  INCLUDED               src D17,D19      paid    85.30 adj    35.37
+    2026-07-15 97110        97.00  INCLUDED               src D17,D19      paid    71.23 adj    25.77
+    2026-07-15 G0283        30.00  INCLUDED               src D17,D19      paid    18.12 adj     9.87
+    2026-07-15 97530       134.00  INCLUDED               src D17,D19      paid    58.95 adj    68.50
+    2026-07-19 97110       189.00  INCLUDED               src D17,D19      paid    45.71 adj   138.21
+    2026-07-23 97110       169.00  INCLUDED               src D17,D19      paid    37.84 adj   121.70
+    2026-07-23 G0283        29.00  INCLUDED               src D17,D19      paid    13.94 adj    11.58
+    2026-07-25 97110       173.00  INCLUDED               src D17,D19      paid    50.14 adj   122.86
+    2026-07-25 97112       120.00  INCLUDED               src D17,D19      paid    76.39 adj    43.61
+    2026-07-29 97110       133.00  INCLUDED               src D17,D19      paid    95.01 adj    37.99
+    2026-07-29 97112        92.00  INCLUDED               src D17,D19      paid    59.58 adj    17.53
+    2026-07-29 G0283        49.00  INCLUDED               src D17,D19      paid    27.45 adj    21.55
+    2026-08-01 97530       175.00  NEEDS_RECORD           src D17,D19      paid    83.35 adj    70.81
+        - billed, no visit note on file (counted provisionally)
+    2026-08-05 G0283        29.00  INCLUDED               src D17,D19      paid    15.52 adj    11.75
+    2026-08-08 G0283        44.00  INCLUDED               src D17,D19      paid    17.43 adj    22.21
+    2026-08-10 97112       110.00  INCLUDED               src D17,D19      paid    47.20 adj    57.55
+    2026-08-17 G0283        57.00  INCLUDED               src D17,D19      paid    32.63 adj    16.21
+    2026-08-17 97530       159.00  INCLUDED               src D17,D19      paid   116.19 adj    42.81
+    2026-08-17 97110       103.00  INCLUDED               src D17,D19      paid    85.45 adj    17.55
+    2026-08-24 97112       107.00  INCLUDED               src D17,D19      paid    63.72 adj    27.35
+    2026-08-24 97110       187.00  INCLUDED               src D17,D19      paid    64.92 adj   122.08
+    2026-08-24 G0283        55.00  INCLUDED               src D17,D19      paid    19.07 adj    33.81
+    2026-08-31 97112       151.00  INCLUDED               src D17,D19      paid    42.09 adj   108.91
+    2026-09-07 97110       130.00  NEEDS_RECORD           src D17,D19      paid    54.14 adj    62.32
+        - billed, no visit note on file (counted provisionally)
+    2026-09-07 97112       118.00  NEEDS_RECORD           src D17,D19      paid   100.06 adj    17.94
+        - billed, no visit note on file (counted provisionally)
+    2026-09-07 G0283        27.00  NEEDS_RECORD           src D17,D19      paid    10.27 adj    14.16
+        - billed, no visit note on file (counted provisionally)
+    2026-09-11 97530       118.00  INCLUDED               src D17,D19      paid    53.58 adj    64.42
+    2026-09-11 97110       121.00  INCLUDED               src D17,D19      paid    32.47 adj    88.53
+    2026-09-11 G0283        60.00  INCLUDED               src D17,D19      paid    20.91 adj    33.86
+  University Health Medical Center
+    2026-06-21 72040       400.00  INCLUDED               src D29          no payment data
+    2026-06-21 73030       521.00  INCLUDED               src D29          no payment data
+    2026-06-21 99283     2,500.00  INCLUDED               src D29          no payment data
+
+NOTES
+  - D28: same statement as one already read -> credits not applied twice
+  - D20: UB-04 summary 3,421.00 = itemized charges already counted -> not added again
+  - D21: UB-04 summary 3,421.00 = itemized charges already counted -> not added again
+
+REQUESTS
+  records: Peak Performance Physical Therapy, DOS 2026-08-01
+  records: Peak Performance Physical Therapy, DOS 2026-09-07
+  bill   : Peak Performance Physical Therapy, DOS 2026-08-21 (seen in D16)
+
+TOTALS
+  billed specials            7,961.00   (truth 7,961.00)
+  paid basis                 6,081.97   3 charges without payment data counted at billed
+  liens                  {'Medicaid (state plan)': 2461.4}
+  quick tallies          add every bill 20,285.00 | drop re-sent copies 12,142.00 | de-dupe lines on date+amount 8,143.00

@@ -1,0 +1,51 @@
+{
+ "ledger": {
+  "exact_cases": 982,
+  "overstated_total": 14252.0,
+  "understated_total": 344.0,
+  "median_abs_error": 0.0,
+  "cases_over_1000": 4
+ },
+ "sum_all": {
+  "exact_cases": 3,
+  "overstated_total": 10332202.0,
+  "understated_total": 0,
+  "median_abs_error": 8671.0,
+  "cases_over_1000": 974
+ },
+ "drop_resent": {
+  "exact_cases": 6,
+  "overstated_total": 5874001.0,
+  "understated_total": 0,
+  "median_abs_error": 4715.0,
+  "cases_over_1000": 913
+ },
+ "line_dedupe": {
+  "exact_cases": 383,
+  "overstated_total": 958207.0,
+  "understated_total": 4433.0,
+  "median_abs_error": 142.0,
+  "cases_over_1000": 149
+ },
+ "truth_total_billed": 9518713.0,
+ "requests": {
+  "true": 3294,
+  "found": 3179,
+  "listed": 3187,
+  "wrong": 8
+ },
+ "exclusions": {
+  "pre_accident_lines_true": 818,
+  "pre_accident_excluded": 818,
+  "unrelated_lines_true": 284,
+  "unrelated_flagged": 272
+ },
+ "paid": {
+  "cases_with_full_payment_data": 89,
+  "paid_basis_exact": 89,
+  "liens_exact": 69
+ },
+ "cases": 1000,
+ "unresolved_provider_docs": 0
+}
+18 ledger misses: [{'seed': 90009, 'truth': 7871.0, 'ledger': 8074.0, 'diff': 203.0}, {'seed': 90019, 'truth': 14134.0, 'ledger': 14234.0, 'diff': 100.0}, {'seed': 90105, 'truth': 5229.0, 'ledger': 9089.0, 'diff': 3860.0}, {'seed': 90159, 'truth': 5511.0, 'ledger': 7532.0, 'diff': 2021.0}, {'seed': 90166, 'truth': 12615.0, 'ledger': 16549.0, 'diff': 3934.0}, {'seed': 90213, 'truth': 14478.0, 'ledger': 14324.0, 'diff': -154.0}, {'seed': 90281, 'truth': 8441.0, 'ledger': 8556.0, 'diff': 115.0}, {'seed': 90323, 'truth': 6855.0, 'ledger': 6943.0, 'diff': 88.0}]

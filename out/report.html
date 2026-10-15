@@ -1,0 +1,10 @@
+<!doctype html><meta charset=utf-8><title>specials ledger</title>
+<style>body{font:16px system-ui;margin:28px;max-width:1000px}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:8px 12px;text-align:right}td:first-child,th:first-child{text-align:left}.g td{background:#eaf7ee;font-weight:600}</style>
+<h2>Medical specials: held-out bank, 1,000 synthetic PI cases</h2>
+<p>Bills in 3 layouts + EOBs + visit notes per case; truth = unique, related charges billed (from the generator). Unofficial prototype, not affiliated with Andco.</p>
+<table><tr><th>Method</th><th>Exact specials, first run</th><th>Exact, after fixes</th><th>$ overstated (all cases)</th><th>Cases off by &gt;$1,000</th></tr><tr class=><td>Add every bill document</td><td>3</td><td>3</td><td>$10,332,202</td><td>974</td></tr><tr class=><td>…minus re-sent copies</td><td>6</td><td>6</td><td>$5,874,001</td><td>913</td></tr><tr class=><td>De-dupe lines on date + amount</td><td>383</td><td>383</td><td>$958,207</td><td>149</td></tr><tr class=g><td>Specials ledger</td><td>839</td><td>982</td><td>$14,252</td><td>4</td></tr></table>
+<p>Pre-accident lines excluded 818/818 ·
+unrelated flagged 272/284 ·
+requests found 3179/3294 with 8 wrong ·
+paid basis exact 89/89 cases with full payment data.</p>
+<p>First run: 839/1000 — "Northgate UC Grp" did not resolve (UC = Urgent Care). Fix: abbreviation-by-initials + "grp"; plus re-sent statements applying credits twice (paid basis). Remaining 18 misses: 17 are visits billed with no note yet (counted provisionally, on the request list) that turned out unrelated; 1 other.</p>

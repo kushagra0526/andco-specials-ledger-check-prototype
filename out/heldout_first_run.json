@@ -1,0 +1,654 @@
+{
+ "summary": {
+  "ledger": {
+   "exact_cases": 839,
+   "overstated_total": 93545.0,
+   "understated_total": 344.0,
+   "median_abs_error": 0.0,
+   "cases_over_1000": 11
+  },
+  "sum_all": {
+   "exact_cases": 3,
+   "overstated_total": 10332202.0,
+   "understated_total": 0,
+   "median_abs_error": 8671.0,
+   "cases_over_1000": 974
+  },
+  "drop_resent": {
+   "exact_cases": 6,
+   "overstated_total": 5874001.0,
+   "understated_total": 0,
+   "median_abs_error": 4715.0,
+   "cases_over_1000": 913
+  },
+  "line_dedupe": {
+   "exact_cases": 383,
+   "overstated_total": 958207.0,
+   "understated_total": 4433.0,
+   "median_abs_error": 142.0,
+   "cases_over_1000": 149
+  },
+  "truth_total_billed": 9518713.0,
+  "requests": {
+   "true": 3294,
+   "found": 3147,
+   "listed": 3829,
+   "wrong": 682
+  },
+  "exclusions": {
+   "pre_accident_lines_true": 818,
+   "pre_accident_excluded": 860,
+   "unrelated_lines_true": 284,
+   "unrelated_flagged": 271
+  },
+  "paid": {
+   "cases_with_full_payment_data": 74,
+   "paid_basis_exact": 64,
+   "liens_exact": 57
+  },
+  "cases": 1000,
+  "unresolved_provider_docs": 715
+ },
+ "ledger_misses": [
+  {
+   "seed": 90002,
+   "truth": 9752.0,
+   "ledger": 10293.0,
+   "diff": 541.0
+  },
+  {
+   "seed": 90009,
+   "truth": 7871.0,
+   "ledger": 8074.0,
+   "diff": 203.0
+  },
+  {
+   "seed": 90019,
+   "truth": 14134.0,
+   "ledger": 14234.0,
+   "diff": 100.0
+  },
+  {
+   "seed": 90029,
+   "truth": 4669.0,
+   "ledger": 4990.0,
+   "diff": 321.0
+  },
+  {
+   "seed": 90035,
+   "truth": 14289.0,
+   "ledger": 14900.0,
+   "diff": 611.0
+  },
+  {
+   "seed": 90040,
+   "truth": 13007.0,
+   "ledger": 13539.0,
+   "diff": 532.0
+  },
+  {
+   "seed": 90044,
+   "truth": 7176.0,
+   "ledger": 7962.0,
+   "diff": 786.0
+  },
+  {
+   "seed": 90055,
+   "truth": 7188.0,
+   "ledger": 7386.0,
+   "diff": 198.0
+  },
+  {
+   "seed": 90064,
+   "truth": 10231.0,
+   "ledger": 10685.0,
+   "diff": 454.0
+  },
+  {
+   "seed": 90065,
+   "truth": 23243.0,
+   "ledger": 23776.0,
+   "diff": 533.0
+  },
+  {
+   "seed": 90072,
+   "truth": 7168.0,
+   "ledger": 7801.0,
+   "diff": 633.0
+  },
+  {
+   "seed": 90074,
+   "truth": 10448.0,
+   "ledger": 10725.0,
+   "diff": 277.0
+  },
+  {
+   "seed": 90075,
+   "truth": 3033.0,
+   "ledger": 3295.0,
+   "diff": 262.0
+  },
+  {
+   "seed": 90080,
+   "truth": 5746.0,
+   "ledger": 6439.0,
+   "diff": 693.0
+  },
+  {
+   "seed": 90083,
+   "truth": 11967.0,
+   "ledger": 12851.0,
+   "diff": 884.0
+  },
+  {
+   "seed": 90093,
+   "truth": 6738.0,
+   "ledger": 7180.0,
+   "diff": 442.0
+  },
+  {
+   "seed": 90098,
+   "truth": 3682.0,
+   "ledger": 3948.0,
+   "diff": 266.0
+  },
+  {
+   "seed": 90105,
+   "truth": 5229.0,
+   "ledger": 9089.0,
+   "diff": 3860.0
+  },
+  {
+   "seed": 90119,
+   "truth": 12149.0,
+   "ledger": 12459.0,
+   "diff": 310.0
+  },
+  {
+   "seed": 90132,
+   "truth": 5378.0,
+   "ledger": 5684.0,
+   "diff": 306.0
+  },
+  {
+   "seed": 90148,
+   "truth": 9875.0,
+   "ledger": 10230.0,
+   "diff": 355.0
+  },
+  {
+   "seed": 90158,
+   "truth": 3871.0,
+   "ledger": 4257.0,
+   "diff": 386.0
+  },
+  {
+   "seed": 90159,
+   "truth": 5511.0,
+   "ledger": 7532.0,
+   "diff": 2021.0
+  },
+  {
+   "seed": 90163,
+   "truth": 19844.0,
+   "ledger": 20529.0,
+   "diff": 685.0
+  },
+  {
+   "seed": 90164,
+   "truth": 8168.0,
+   "ledger": 8558.0,
+   "diff": 390.0
+  },
+  {
+   "seed": 90165,
+   "truth": 13978.0,
+   "ledger": 14550.0,
+   "diff": 572.0
+  },
+  {
+   "seed": 90166,
+   "truth": 12615.0,
+   "ledger": 16549.0,
+   "diff": 3934.0
+  },
+  {
+   "seed": 90176,
+   "truth": 10743.0,
+   "ledger": 11220.0,
+   "diff": 477.0
+  },
+  {
+   "seed": 90185,
+   "truth": 7719.0,
+   "ledger": 7947.0,
+   "diff": 228.0
+  },
+  {
+   "seed": 90196,
+   "truth": 12849.0,
+   "ledger": 13688.0,
+   "diff": 839.0
+  },
+  {
+   "seed": 90205,
+   "truth": 15831.0,
+   "ledger": 16657.0,
+   "diff": 826.0
+  },
+  {
+   "seed": 90210,
+   "truth": 16904.0,
+   "ledger": 17788.0,
+   "diff": 884.0
+  },
+  {
+   "seed": 90212,
+   "truth": 12830.0,
+   "ledger": 13009.0,
+   "diff": 179.0
+  },
+  {
+   "seed": 90213,
+   "truth": 14478.0,
+   "ledger": 14324.0,
+   "diff": -154.0
+  },
+  {
+   "seed": 90216,
+   "truth": 11550.0,
+   "ledger": 12451.0,
+   "diff": 901.0
+  },
+  {
+   "seed": 90238,
+   "truth": 6830.0,
+   "ledger": 7150.0,
+   "diff": 320.0
+  },
+  {
+   "seed": 90239,
+   "truth": 15703.0,
+   "ledger": 16116.0,
+   "diff": 413.0
+  },
+  {
+   "seed": 90244,
+   "truth": 8910.0,
+   "ledger": 9732.0,
+   "diff": 822.0
+  },
+  {
+   "seed": 90247,
+   "truth": 3190.0,
+   "ledger": 3818.0,
+   "diff": 628.0
+  },
+  {
+   "seed": 90249,
+   "truth": 12274.0,
+   "ledger": 12835.0,
+   "diff": 561.0
+  },
+  {
+   "seed": 90253,
+   "truth": 9309.0,
+   "ledger": 10125.0,
+   "diff": 816.0
+  },
+  {
+   "seed": 90255,
+   "truth": 11855.0,
+   "ledger": 13022.0,
+   "diff": 1167.0
+  },
+  {
+   "seed": 90266,
+   "truth": 10759.0,
+   "ledger": 11233.0,
+   "diff": 474.0
+  },
+  {
+   "seed": 90267,
+   "truth": 7827.0,
+   "ledger": 8594.0,
+   "diff": 767.0
+  },
+  {
+   "seed": 90274,
+   "truth": 15151.0,
+   "ledger": 15572.0,
+   "diff": 421.0
+  },
+  {
+   "seed": 90278,
+   "truth": 9396.0,
+   "ledger": 9802.0,
+   "diff": 406.0
+  },
+  {
+   "seed": 90281,
+   "truth": 8441.0,
+   "ledger": 8556.0,
+   "diff": 115.0
+  },
+  {
+   "seed": 90323,
+   "truth": 6855.0,
+   "ledger": 6943.0,
+   "diff": 88.0
+  },
+  {
+   "seed": 90333,
+   "truth": 18991.0,
+   "ledger": 19809.0,
+   "diff": 818.0
+  },
+  {
+   "seed": 90344,
+   "truth": 7522.0,
+   "ledger": 7679.0,
+   "diff": 157.0
+  },
+  {
+   "seed": 90345,
+   "truth": 5259.0,
+   "ledger": 5545.0,
+   "diff": 286.0
+  },
+  {
+   "seed": 90349,
+   "truth": 9382.0,
+   "ledger": 10477.0,
+   "diff": 1095.0
+  },
+  {
+   "seed": 90351,
+   "truth": 10308.0,
+   "ledger": 11019.0,
+   "diff": 711.0
+  },
+  {
+   "seed": 90369,
+   "truth": 3976.0,
+   "ledger": 4219.0,
+   "diff": 243.0
+  },
+  {
+   "seed": 90372,
+   "truth": 12602.0,
+   "ledger": 13738.0,
+   "diff": 1136.0
+  },
+  {
+   "seed": 90380,
+   "truth": 15901.0,
+   "ledger": 16338.0,
+   "diff": 437.0
+  },
+  {
+   "seed": 90385,
+   "truth": 6941.0,
+   "ledger": 7240.0,
+   "diff": 299.0
+  },
+  {
+   "seed": 90387,
+   "truth": 1132.0,
+   "ledger": 1694.0,
+   "diff": 562.0
+  },
+  {
+   "seed": 90398,
+   "truth": 18592.0,
+   "ledger": 18962.0,
+   "diff": 370.0
+  },
+  {
+   "seed": 90403,
+   "truth": 17815.0,
+   "ledger": 18613.0,
+   "diff": 798.0
+  },
+  {
+   "seed": 90410,
+   "truth": 11171.0,
+   "ledger": 11699.0,
+   "diff": 528.0
+  },
+  {
+   "seed": 90413,
+   "truth": 4634.0,
+   "ledger": 5667.0,
+   "diff": 1033.0
+  },
+  {
+   "seed": 90414,
+   "truth": 13248.0,
+   "ledger": 14320.0,
+   "diff": 1072.0
+  },
+  {
+   "seed": 90421,
+   "truth": 12928.0,
+   "ledger": 13567.0,
+   "diff": 639.0
+  },
+  {
+   "seed": 90427,
+   "truth": 3334.0,
+   "ledger": 3804.0,
+   "diff": 470.0
+  },
+  {
+   "seed": 90440,
+   "truth": 9166.0,
+   "ledger": 10086.0,
+   "diff": 920.0
+  },
+  {
+   "seed": 90444,
+   "truth": 9121.0,
+   "ledger": 10043.0,
+   "diff": 922.0
+  },
+  {
+   "seed": 90446,
+   "truth": 9656.0,
+   "ledger": 9825.0,
+   "diff": 169.0
+  },
+  {
+   "seed": 90450,
+   "truth": 9681.0,
+   "ledger": 10586.0,
+   "diff": 905.0
+  },
+  {
+   "seed": 90454,
+   "truth": 10578.0,
+   "ledger": 10909.0,
+   "diff": 331.0
+  },
+  {
+   "seed": 90474,
+   "truth": 11307.0,
+   "ledger": 11883.0,
+   "diff": 576.0
+  },
+  {
+   "seed": 90475,
+   "truth": 10803.0,
+   "ledger": 11077.0,
+   "diff": 274.0
+  },
+  {
+   "seed": 90482,
+   "truth": 6724.0,
+   "ledger": 7638.0,
+   "diff": 914.0
+  },
+  {
+   "seed": 90485,
+   "truth": 8970.0,
+   "ledger": 9538.0,
+   "diff": 568.0
+  },
+  {
+   "seed": 90486,
+   "truth": 7210.0,
+   "ledger": 7645.0,
+   "diff": 435.0
+  },
+  {
+   "seed": 90491,
+   "truth": 10366.0,
+   "ledger": 10872.0,
+   "diff": 506.0
+  },
+  {
+   "seed": 90496,
+   "truth": 12556.0,
+   "ledger": 13416.0,
+   "diff": 860.0
+  },
+  {
+   "seed": 90497,
+   "truth": 18805.0,
+   "ledger": 19368.0,
+   "diff": 563.0
+  },
+  {
+   "seed": 90500,
+   "truth": 14698.0,
+   "ledger": 15432.0,
+   "diff": 734.0
+  },
+  {
+   "seed": 90503,
+   "truth": 7222.0,
+   "ledger": 8070.0,
+   "diff": 848.0
+  },
+  {
+   "seed": 90505,
+   "truth": 12004.0,
+   "ledger": 12660.0,
+   "diff": 656.0
+  },
+  {
+   "seed": 90506,
+   "truth": 10288.0,
+   "ledger": 10560.0,
+   "diff": 272.0
+  },
+  {
+   "seed": 90507,
+   "truth": 11883.0,
+   "ledger": 12508.0,
+   "diff": 625.0
+  },
+  {
+   "seed": 90520,
+   "truth": 10010.0,
+   "ledger": 10560.0,
+   "diff": 550.0
+  },
+  {
+   "seed": 90522,
+   "truth": 10209.0,
+   "ledger": 11083.0,
+   "diff": 874.0
+  },
+  {
+   "seed": 90526,
+   "truth": 10856.0,
+   "ledger": 11424.0,
+   "diff": 568.0
+  },
+  {
+   "seed": 90527,
+   "truth": 3671.0,
+   "ledger": 4635.0,
+   "diff": 964.0
+  },
+  {
+   "seed": 90534,
+   "truth": 6299.0,
+   "ledger": 6536.0,
+   "diff": 237.0
+  },
+  {
+   "seed": 90535,
+   "truth": 4746.0,
+   "ledger": 5190.0,
+   "diff": 444.0
+  },
+  {
+   "seed": 90539,
+   "truth": 7419.0,
+   "ledger": 7715.0,
+   "diff": 296.0
+  },
+  {
+   "seed": 90553,
+   "truth": 16095.0,
+   "ledger": 16353.0,
+   "diff": 258.0
+  },
+  {
+   "seed": 90565,
+   "truth": 11355.0,
+   "ledger": 11586.0,
+   "diff": 231.0
+  },
+  {
+   "seed": 90572,
+   "truth": 10745.0,
+   "ledger": 10833.0,
+   "diff": 88.0
+  },
+  {
+   "seed": 90574,
+   "truth": 6114.0,
+   "ledger": 5924.0,
+   "diff": -190.0
+  },
+  {
+   "seed": 90577,
+   "truth": 10290.0,
+   "ledger": 10700.0,
+   "diff": 410.0
+  },
+  {
+   "seed": 90581,
+   "truth": 18514.0,
+   "ledger": 18646.0,
+   "diff": 132.0
+  },
+  {
+   "seed": 90590,
+   "truth": 9490.0,
+   "ledger": 10280.0,
+   "diff": 790.0
+  },
+  {
+   "seed": 90598,
+   "truth": 8164.0,
+   "ledger": 8428.0,
+   "diff": 264.0
+  },
+  {
+   "seed": 90600,
+   "truth": 12497.0,
+   "ledger": 13077.0,
+   "diff": 580.0
+  },
+  {
+   "seed": 90601,
+   "truth": 12429.0,
+   "ledger": 12854.0,
+   "diff": 425.0
+  }
+ ]
+}
